@@ -1,304 +1,652 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-		<title>Bakery</title>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="format-detection" content="telephone=no">
-	    <meta name="apple-mobile-web-app-capable" content="yes">
-	    <meta name="author" content="">
-	    <meta name="keywords" content="">
-	    <meta name="description" content="">
-		
-	    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
-	    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<html>
+<head>
+    <title>eASY TUTORIALS</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .column11 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+</style>
 
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-	    <link rel="stylesheet" type="text/css" href="style.css">
-
-	</head>
-	<body>
-
-<div id="main-wrapper" class="overflow-hidden">
-	<div class="header-top-menu bg-black color-secondary">
-		<div class="container">
-			<div class="row">
-				<div class="wrap flex-container padding-small">
-				<div class="contact-block">
-					<span class="pr-50"><i class="icon icon-phone"></i>918815312085</span>
-					<span class="color-secondary"><i class="icon icon-envelope-o"></i><a href="#"> shokeen@gmail.com</a></span>
-				</div>
-
-				<div class="header-top-right">
-					<ul class="list-unstyled d-flex color-secondary">
-						<!-- <li class="pr-50"><a href="#">My Account</a></li> -->
-						<li class="pr-50"><a href="#">FAQs</a></li>
-						<li><a href="#">Help</a></li>
-					</ul>
-				</div>
-
-				</div><!--flex-container-->
-
-			</div>
-		</div>
-	</div><!----top-menu---->
-
-	<header id="header">
-		<div class="container">
-			<div class="row">
-
-			<nav class="navbar navbar-expand-lg col-md-12">
-
-				<div class="navbar-brand">
-					<a href="index.html">
-						<img src="images/main-logo.png" alt="logo">
-					</a>
-				</div>
-
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
-				</button>
-
-				<div class="navbar-collapse collapse" id="slide-navbar-collapse">
-					<ul class="navbar-nav list-inline text-uppercase">
-						<li class="nav-item text-hover"><a href="#" class="nav-link" data-effect="Home">Home</a></li>
-						<li class="nav-item text-hover"><a href="about.html" class="nav-link" data-effect="About Us">About us</a></li>
-						<!-- <li class="nav-item text-hover"><a href="blog.html" class="nav-link" data-effect="Blogs">Blog</a></li>
-						<li class="nav-item text-hover"><a href="contact.html" class="nav-link" data-effect="Contact">Contact us</a></li> -->
-
-						<li class="nav-item dropdown active">
-							<a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Menu</a>
-							<ul class="dropdown-menu">
-								<li><a href="#north_indian" class="dropdown-item">North Indian </a></li>
-								<li><a href="#south_indian" class="dropdown-item">South Indian</a></li>
-								<!-- <li><a href="single-post.html" class="dropdown-item">Single Post</a></li>
-								<li><a href="contact.html" class="dropdown-item">Contact us</a></li>
-								<li><a href="shop.html" class="dropdown-item">Shop</a></li>
-								<li><a href="single-product.html" class="dropdown-item">Single Product</a></li> -->
-							</ul>
-						</li>
-
-					</ul>
-				</div>
-
-				<div class="action-menu">
-					<div class="searchbar">
-						<a href="#" class="search-button search-toggle" data-selector=".navbar">
-							<i class="icon icon-search"></i>
-						</a>
-						<form role="search" method="get" class="search-box" action="">
-							<input class="search-field text search-input" placeholder="Search" type="search">
-						</form>
-					</div>
-					<div class="shopping-cart">
-						<a href="#">
-							<i class="icon icon-shopping-cart"></i>
-						</a>
-					</div>
-				</div><!--action-menu-->
-
-			</nav>
-
-			</div>		
-		</div>
-
-	</header>
-
-<div class="site-banner">
-	<div class="banner-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">			
-					<div class="colored">
-						<h1>Restorent Menu</h1>
-						<div class="breadcum-items">
-							<!-- <span class="item"><a href="index.html">Menu</a></span> -->
-							<!-- <span class="item colored">A</span> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div><!--site-banner-->
-
-<section class="our-team bg-sand padding-large">
-	<div class="container">
-		<div class="row" id="north indian">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h1>North Indian</h1>
-				</div>
-			</div>
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/north-indian/Paneer-butter-masala-recipe-3.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Paneer Butter Masala</h5>
-					<p class="price colored">₹ 150</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Paneer Butter Masala ₹ 150"><button>Order</button></a>
-				</div>
-			</div>
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/north-indian/palak-paneer.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Palak Paneer </h5>
-					<p class="price colored">₹ 80</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Palak Paneer ₹ 80"><button>Order</button></a>
-				</div>
-			</div>
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/north-indian/dal-makhani-dark-background-traditional-indian-cuisine-puree-dish-urad-beans-red-butter-spices-cream-156960449.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Dal Makhani </h5>
-					<p class="price colored">₹ 180</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Dal Makhani Paneer ₹ 180"><button>Order</button></a>
-				</div>
-			</div>
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/north-indian/Dal-Tadka-2-683x1024.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Dal Thadka </h5>
-					<p class="price colored">₹ 200</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Dal Thadka ₹ 200"><button>Order</button></a>
-				</div>
-			</div>
+<body>
 
 
-		</div>
+
+<div id="nav-bar">    
+    <nav class="navbar navbar-expand-md fixed-top navbar-default">
+       <div class="container-fluid"> 
+           <!-- <a class="navbar-brand" href="#"><img src="img/logo.png"></a> -->
+           <div  style="margin-top: 10px;text-align: center;">
+                <h5 class="text-center">Shaukeen Fast Food Restaurant</h5>
+            </div>
+                
+           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" >
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" navbar-collapse" id="menu">  
+                
+                    <ul class="nav navbar-nav">
+                    <div class="row">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#north_indian" >North Indian</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#south_indian">South Indian</a>
+                        </li>                                                          
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chineese">Chineese</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>       
 
 
-		<div class="row" id="south_indian">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h1>South Indian</h1>
-				</div>
-			</div>
-			
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/south-indian/idli.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Idli Samar</h5>
-					<p class="price colored">₹ 200</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Idli Samar ₹ 200"><button>Order</button></a>
-				</div>
-			</div>
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/south-indian/SAMAI-IDLI-1-scaled.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Masala Dossa </h5>
-					<p class="price colored">₹ 60</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Masala Dossa ₹ 60"><button>Order</button></a>
-				</div>
-			</div>
 
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/south-indian/How_to_make_Vada_Using_Id_Fresh_Vada_Batter_Video_Recipe_1.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Vadas </h5>
-					<p class="price colored">₹ 600</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Vadas ₹ 600"><button>Order</button></a>
-				</div>
-			</div>
+<div id="slider">
+    
+    <div id="headerSlider" class="carousel slide" data-ride="carousel">
+        
+      <ol class="carousel-indicators">
+        <li data-target="#headerSlider" data-slide-to="0" class="active"></li>  
+        <li data-target="#headerSlider" data-slide-to="1"></li>
+        <li data-target="#headerSlider" data-slide-to="2"></li>  
+      </ol>
+    
+        <div class="carousel-inner">    
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="images/home/1">
+                    <!-- <div class="carousel-caption">
+                        <h5>How To Make A Website</h5>
+                    </div> -->
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/2">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/3">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/4">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/5">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/6">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/7">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/8">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/9">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/10">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/11">
+            </div>   
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/home/12">
+            </div>   
+        </div>        
+        <a class="carousel-control-prev text-center" href="#headerSlider" role="button" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span> -->
+        </a>
+    
+    </div> 
+</div>     
 
-			<div class="product-item col-md-3 pb-4">
-				<a href="#" class="product-image"><img src="images/south-indian/Uttappam.jpg"></a>
-				<div class="text-comtent text-center">
-					<h5 class="pt-4">Uttapams</h5>
-					<p class="price colored">₹ 400</p>
-					<a href="https://api.whatsapp.com/send?phone=918815312085&text=Uttapams ₹ 400"><button>Order</button></a>
-				</div>
-			</div>
+<!-- North Indians -->
+<section id="north_indian">
+    <div class="container our-team bg-sand padding-large main" >
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-12 text-center">
+                <h1 style="text-align: center;">North Indian</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column11" >
+                <img src="images/north-indian/veg biryani.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Veg biryani</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Veg biryani ₹ 70"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/chole bha.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Chole bhature</h6>
+                    <p class="price colored">₹ 80</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Chole bhature ₹ 80"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/paneer kulche.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Paneer kulche</h6>
+                    <p class="price colored">₹ 100</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Paneer kulche ₹ 100"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/Chole kulche.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Chole kulche</h6>
+                    <p class="price colored">₹ 80</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Chole kulche ₹ 80"><button>Order</button></a>
+                </div>
+            </div>      
+        </div>
+        
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-12 text-center">
+                <h1 style="text-align: center;">Sandwich</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column11" >
+                <img src="images/north-indian/Veg sandwich.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Veg Sandwich</h6>
+                    <p class="price colored">₹ 50</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Veg Sandwich ₹ 50"><button>Order</button></a>
+                </div>
+            </div> 
+
+            <div class="column11" >
+                <img src="images/north-indian/Veg cheese sandwich.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Veg Cheese Sandwich</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Veg cheese sandwich ₹ 70"><button>Order</button></a>
+                </div>
+            </div> 
+
+            <div class="column11" >
+                <img src="images/north-indian/Veg cheese paneer sandwich.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Veg Cheese Paneer Sandwich</h6>
+                    <p class="price colored">₹ 90</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Veg cheese paneer sandwich ₹ 90"><button>Order</button></a>
+                </div>
+            </div> 
+
+            <div class="column11" >
+                <img src="images/north-indian/Creamy cheese sandwich.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Creamy cheese sandwich</h6>
+                    <p class="price colored">₹ 80</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Creamy cheese sandwich ₹ 80"><button>Order</button></a>
+                </div>
+            </div> 
+
+            <div class="column11" >
+                <img src="images/north-indian/Shaukeens junglee sandwich.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Shaukeens junglee sandwich</h6>
+                    <p class="price colored">₹ 100</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Shaukeens junglee sandwich ₹ 100"><button>Order</button></a>
+                </div>
+            </div> 
+        </div>
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-12 text-center">
+                <h1 style="text-align: center;">Cofee n Shakes</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column11" >
+                <img src="images/north-indian/shakes/Cold Cofee.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Cold Cofee</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Cold Cofee ₹ 70"><button>Order</button></a>
+                </div>
+            </div> 
+
+            <div class="column11" >
+                <img src="images/north-indian/shakes/Baadam shake.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Baadam shake</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Baadam shake ₹ 70"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/shakes/Oreo Chocolate shake .jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Oreo Chocolate shake </h6>
+                    <p class="price colored">₹ 80</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Oreo Chocolate shake  ₹ 80"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/shakes/Butter scotch shake.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Butter scotch shake</h6>
+                    <p class="price colored">₹ 80</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Butter scotch shake ₹ 80"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/shakes/Pineapple shake.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Pineapple shake</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Pineapple shake ₹ 70 "><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/shakes/Strawberry shake.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Strawberry shake</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Strawberry shake ₹ 70"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/north-indian/shakes/Banana shake.jpeg" style="width:100%;height: 7.5em;">
+            </div>
+            <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Banana shake</h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Banana shake ₹ 60"><button>Order</button></a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>        
 
 
-		</div>
-	</div>
+<!-- South Indians -->
+<section id="south_indian">
+    <div class="container our-team bg-sand padding-large main" >
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-12 text-center">
+                <h1 style="text-align: center;">South Indians</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column11" >
+                <img src="images/south-indian/plan dosa.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Plain dosa</h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Plain dosa ₹ 60"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/south-indian/masala-doss.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Masala Dosa</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Masala Dosa ₹ 70"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/south-indian/Onion tomato dosa.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Onion tomato dosa</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Onion tomato dosa ₹ 100"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/south-indian/Shoukeens spl paneer dosa.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Shoukeens spl paneer dosa</h6>
+                    <p class="price colored">₹ 100</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Shoukeens spl paneer dosa ₹ 100"><button>Order</button></a>
+                </div>
+            </div>      
+
+            <div class="column11" >
+                <img src="images/south-indian/idli.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Idli sambhar</h6>
+                    <p class="price colored">₹ 50</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Idli sambhar ₹ 50"><button>Order</button></a>
+                </div>
+            </div>      
+            <div class="column11" >
+                <img src="images/south-indian/Vada sambhar.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Vada sambhar</h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Vada sambhar ₹ 50"><button>Order</button></a>
+                </div>
+            </div>      
+            <div class="column11" >
+                <img src="images/south-indian/Dahi vada.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Dahi vada</h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Dahi vada ₹ 60"><button>Order</button></a>
+                </div>
+            </div>      
+            <div class="column11" >
+                <img src="images/south-indian/Uttappam.jpg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Uttapam</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Uttapam ₹ 70"><button>Order</button></a>
+                </div>
+            </div>      
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-12 text-center">
+                <h1 style="text-align: center;">Soups</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column11" >
+                <img src="images/south-indian/soups/Tomato Soup.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Tomato Soup</h6>
+                    <p class="price colored">₹ 40</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text= Tomato Soup ₹ 40"><button>Order</button></a>
+                </div>
+            </div>
+            <div class="column11" >
+                <img src="images/south-indian/soups/Manchow Soup.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Manchow Soup</h6>
+                    <p class="price colored">₹ 40</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Manchow Soup ₹ 40"><button>Order</button></a>
+                </div>
+            </div>
+            <div class="column11" >
+                <img src="images/south-indian/soups/Hot & Sour Soup.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Hot & Sour Soup</h6>
+                    <p class="price colored">₹ 40</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Hot & Sour Soup ₹ 40"><button>Order</button></a>
+                </div>
+            </div>
+            <div class="column11" >
+                <img src="images/south-indian/soups/Clear Veg Soup.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Clear Veg Soup</h6>
+                    <p class="price colored">₹ 40</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Clear Veg Soup ₹ 40"><button>Order</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        
+
+<!-- Chineese -->
+<section id="chineese">
+    <div class="container our-team bg-sand padding-large main" >
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-12 text-center">
+                <h1 style="text-align: center;">Chineese</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column11" >
+                <img src="images/chineese/Chowmein .jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Chowmein </h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Chowmein  ₹ 60"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/veg hakka nooodles.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">veg hakka nooodles</h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text= veg hakka nooodles ₹ 60"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/schezwan noodles.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">schezwan noodles</h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=schezwan noodles ₹ 60"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/manchurian dry.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">manchurian dry</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text= manchurian dry ₹ 70"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/manchurian gravy.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">manchurian gravy</h6>
+                    <p class="price colored">₹ 70</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=manchurian gravy ₹ 70 "><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/Red souce pasta.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Red souce pasta</h6>
+                    <p class="price colored">₹ 80</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Red souce pasta ₹ 80"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/White souce pasta.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">White souce pasta</h6>
+                    <p class="price colored">₹ 100</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=White souce pasta ₹ 100 "><button>Order</button></a>
+                </div>
+            </div> 
+
+            <div class="column11" >
+                <img src="images/chineese/Paneer 65.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">Paneer 65</h6>
+                    <p class="price colored">₹ 120</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=Paneer 65 ₹ 120"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/chilli potato.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">chilli potato</h6>
+                    <p class="price colored">₹ 60</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=chilli potato ₹ 60"><button>Order</button></a>
+                </div>
+            </div> 
+            <div class="column11" >
+                <img src="images/chineese/chilli Paneer.jpeg" style="width:100%;height: 7.5em;">
+              </div>
+              <div class="column11" >
+                <div class=" text-center">
+                    <h6 class="">chilli Paneer</h6>
+                    <p class="price colored">₹ 120</p>
+                    <a href="https://api.whatsapp.com/send?phone=918815312085&text=chilli Paneer ₹ 120"><button>Order</button></a>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+</section>        
+
+
+<!--Touch-->
+<section id="contact">
+<div class="container">
+    <h1>Get In Touch</h1>
+    <div class="row">
+        <div class="col-md-6"> 
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Phone no.">
+                </div> 
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email id">
+                </div> 
+                <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+             </form>
+        </div>
+        <div class="col-md-6 contact-info">
+            <div class="follow"><b>Address:</b><i class="fa fa-map-marker"></i> XYZ Road,
+            Bangalore, IN</div>
+            <div class="follow"><b>Phone:</b><i class="fa fa-phone"></i>+91 7066163764</div>
+            <div class="follow"><b>Email:</b><i class="fa fa-map-marker"></i>maulibharate96@gmail.com</div>
+            <div class="follow"><label><b>Get Social:</b></label> 
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 
-<footer id="footer">
-	<div class="container">
-		<div class="row">
-
-			<div class="wrap flex-container">
-
-			<!-- <div class="col-md-3 footer-logo text-center mb-3">
-				<img src="images/main-logo.png" class="mb-3">
-				<p>Bakery is a free HTML CSS Template by Templates Jungle specially crafted for Bakeries.</p>
-			</div>		 -->
-
-			<div class="col-md-5 mr-5 mb-3">
-				<div class="widget-newsletter mb-5">
-					<h4 class="widget-title">Subscribe To Our Newletter</h4>
-					<div class="newsletter-button d-flex">
-						<input type="text" name="Subscribe" placeholder="Your Email Address">
-						<button class="btn-hvr-effects">Subscribe</button>
-					</div>
-					
-				</div><!--widget-newsletter-->
-
-				<div class="working-schedule">
-					<h4 class="widget-title">Our Work Time</h4>
-					<div class="time-list d-flex">
-						<ul class="list-unstyled mr-5">
-							<li>Monday - Friday</li>
-							<li>8:00am - 8:30 pm</li>
-						</ul>
-						<ul class="list-unstyled">
-							<li>Saturday - Sunday</li>
-							<li>10:00am - 16:00 pm</li>
-						</ul>
-					</div>
-				</div>
-			</div><!--col-md-4-->
-
-			<div class="col-md-2">
-				<div class="quick-links">
-					<h4 class="widget-title">Quick Links</h4>
-					<div class="footer-menu">
-						<ul class="list-unstyled">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html">Menu</a></li>
-							<li><a href="#">About us</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			</div><!--content-->
-
-		</div>
-	</div>
-</footer>
 
 
-<!-- <div class="footer-bottom">
-	<div class="container">
-		<div class="wrap flex-container padding-small">
-			<div class="copyright">
-				<p class="mb-0">© 2021 Bakery HTML Template by <a href="https://templatesjungle.com/" target="_blank">Templates Jungle</a></p>
-			</div>
-			<div class="payment-card">
-				<span>We Accept:</span>
-				<img src="images/visa.png" class="cardImg">
-				<img src="images/american-express.png" class="cardImg">
-				<img src="images/master-card.png" class="cardImg">
-			</div>
-		</div>
-	</div>
-</div> -->
-
-</div>    	
-
-<script src="js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>    
 </body>
-</html>	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
