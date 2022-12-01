@@ -102,21 +102,26 @@
 		</ol>
 		
 			<div class="carousel-inner" style="margin-top: 10em;">    
-				<div class="carousel-item active">
+				<!-- <div class="carousel-item active">
 					<img  class="d-block img-fluid" src="images/home/1">
-						<!-- <div class="carousel-caption">
-							<h5>How To Make A Website</h5>
-						</div> -->
-				</div>
-				<div class="carousel-item">
+				</div> -->
+				<!-- <div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/2">
+				</div>    -->
+				<div class="carousel-item active">
+					<img class="d-block img-fluid" src="images/home/7">
+				</div>   
+
+                <div class="carousel-item">
+					<img class="d-block img-fluid" src="images/home/hd1.jpg">
 				</div>   
 				<div class="carousel-item">
-					<img class="d-block img-fluid" src="images/home/3">
+					<img class="d-block img-fluid" src="images/home/hd2.jpg">
 				</div>   
-				<div class="carousel-item">
+
+                <!-- <div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/4">
-				</div>   
+				</div>    -->
 				<div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/5">
 				</div>   
@@ -124,7 +129,7 @@
 					<img class="d-block img-fluid" src="images/home/6">
 				</div>   
 				<div class="carousel-item">
-					<img class="d-block img-fluid" src="images/home/7">
+					<img class="d-block img-fluid" src="images/home/3">
 				</div>   
 				<div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/8">
@@ -132,12 +137,12 @@
 				<div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/9">
 				</div>   
-				<div class="carousel-item">
+				<!-- <div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/10">
-				</div>   
-				<div class="carousel-item">
+				</div>    -->
+				<!-- <div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/11">
-				</div>   
+				</div>    -->
 				<div class="carousel-item">
 					<img class="d-block img-fluid" src="images/home/12">
 				</div>   
@@ -652,8 +657,8 @@
 </div>
 </section>
 <div class="bottomFixButtionComponent" id="order_button"> 
-    <a style="font-size: 100%;border: 2px solid black; background-color: #ce3c83;color: black;padding-left: 1px;padding-right: 1px;border-radius: 10px; width: 30%;color: yellow;">Order </a> <div>|</div>
-    <p style="font-size: 100%;border: 2px solid black; background-color: #ce3c83;color: black;padding-left: 1px;padding-right: 1px;border-radius: 10px; width: 30%;color: yellow;">Total <span id="order_button_data"></span> </p>
+    <a class="test_data_Data" style="font-size: 100%;border: 2px solid black; background-color: #ce3c83;color: black;padding-left: 1px;padding-right: 1px;border-radius: 10px; width: 30%;color: yellow;">Order </a> <div>|</div>
+    <a style="font-size: 100%;border: 2px solid black; background-color: #ce3c83;color: black;padding-left: 1px;padding-right: 1px;border-radius: 10px; width: 30%;color: yellow;">Total <span id="order_button_data"></span> </a>
 </div>
 
 
@@ -683,7 +688,7 @@ $(document).ready(function(){
         fina_data_data1 = final_data.replaceAll('"'," ")
         fina_data_data = fina_data_data1.replaceAll(',',"%0a")
         console.log(fina_data_data);
-        $("a").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text=Hi Shaukeens %0a"+fina_data_data+"")   
+        $(".test_data_Data").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text=Hi Shaukeens %0a"+fina_data_data+"")   
 
     } 
   });
