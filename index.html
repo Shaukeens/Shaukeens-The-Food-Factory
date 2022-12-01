@@ -684,6 +684,8 @@ $(document).ready(function(){
         const final_order_data = JSON.stringify(counts);
         test_data = final_order_data.replace("{","");
         final_data = test_data.replace("}","");
+        console.log(final_data.replaceAll(',',"\n,"))
+        finl_data_data = final_data.replaceAll(',',"\n,")
         
         $("a").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text="+final_data+"")   
 
