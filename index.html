@@ -681,9 +681,9 @@ $(document).ready(function(){
         test_data = final_order_data.replace("{","");
         final_data = test_data.replace("}","");
         fina_data_data1 = final_data.replaceAll('"'," ")
-        fina_data_data = fina_data_data1.replaceAll(',',"%0a,")
+        fina_data_data = fina_data_data1.replaceAll(',',"%0a")
         console.log(fina_data_data);
-        $("a").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text="+fina_data_data+"")   
+        $("a").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text=Hi Shaukeens %0a"+fina_data_data+"")   
 
     } 
   });
