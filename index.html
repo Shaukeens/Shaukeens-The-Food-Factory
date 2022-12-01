@@ -680,9 +680,9 @@ $(document).ready(function(){
         const final_order_data = JSON.stringify(counts);
         test_data = final_order_data.replace("{","");
         final_data = test_data.replace("}","");
-        fina_data_data = final_data.replaceAll(',',"\n,")
-        fina_data_data1 = fina_data_data.replaceAll('"',"")
-        $("a").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text="+fina_data_data1+"")   
+        fina_data_data1 = final_data.replaceAll('"'," ")
+        fina_data_data = final_data1.replaceAll(',',"\n,")
+        $("a").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text="+fina_data_data+"")   
 
     } 
   });
