@@ -27,7 +27,26 @@
   font-size: 1px;
   height: auto; /* Should be removed. Only for demonstration */
 }
+.button-bar {
+  padding: 2rem;
+  background: gray;
+  position: sticky;
+  bottom: 0;
+}
 
+.bottomFixButtionComponent{
+  position: fixed;
+  bottom: 0px;
+  padding-top: 10px;
+  background: yellow;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px -4px 3px rgb(27 27 24 / 75%);
+  text-align: center;
+  }
 </style>
 
 <body>
@@ -42,7 +61,7 @@
         </div>
         <br>
         <div  style="margin-top: 10px;text-align: center;">
-            <h5 class="text-center" style="text-align: center;padding-left: 140px;">Our Menu</h5>
+            <h5 class="text-center" style="text-align: center;padding-left: 140px;">Our Menu's</h5>
         </div>
         <div class="container-fluid"> 
            <!-- <a class="navbar-brand" href="#"><img src="img/logo.png"></a> -->
@@ -154,7 +173,7 @@
                 <div class=" text-center">
                     <h6 class="">Veg biryani</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Veg biryani ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;" value="Veg biryani ₹ 70">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -164,7 +183,7 @@
                 <div class=" text-center">
                     <h6 class="">Chole bhature</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 80</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Chole bhature ₹ 80"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;" value="Chole bhature ₹ 80">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -174,7 +193,7 @@
                 <div class=" text-center">
                     <h6 class="">Paneer kulche</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 100</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Paneer kulche ₹ 100"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;" value="Paneer kulche ₹ 100">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -184,7 +203,7 @@
                 <div class=" text-center">
                     <h6 class="">Chole kulche</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 80</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Chole kulche ₹ 80"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value = "Chole kulche ₹ 80" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>      
         </div>
@@ -203,7 +222,7 @@
                 <div class=" text-center">
                     <h6 class="">Veg Sandwich</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 50</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Veg Sandwich ₹ 50"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Veg Sandwich ₹ 50" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
 
@@ -214,7 +233,7 @@
                 <div class=" text-center">
                     <h6 class="">Veg Cheese Sandwich</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Veg cheese sandwich ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Veg cheese sandwich ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
 
@@ -225,7 +244,7 @@
                 <div class=" text-center">
                     <h6 class="">Veg Cheese Paneer Sandwich</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 90</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Veg cheese paneer sandwich ₹ 90"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Veg cheese paneer sandwich ₹ 90" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
 
@@ -236,7 +255,7 @@
                 <div class=" text-center">
                     <h6 class="">Creamy cheese sandwich</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 80</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Creamy cheese sandwich ₹ 80"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Creamy cheese sandwich ₹ 80" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
 
@@ -247,7 +266,7 @@
                 <div class=" text-center">
                     <h6 class="">Shaukeens junglee sandwich</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 100</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Shaukeens junglee sandwich ₹ 100"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Shaukeens junglee sandwich ₹ 100" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
         </div>
@@ -266,7 +285,7 @@
                 <div class=" text-center">
                     <h6 class="">Cold Cofee</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Cold Cofee ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Cold Cofee ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
 
@@ -277,7 +296,7 @@
                 <div class=" text-center">
                     <h6 class="">Baadam shake</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Baadam shake ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Baadam shake ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -287,7 +306,7 @@
                 <div class=" text-center">
                     <h6 class="">Oreo Chocolate shake </h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 80</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Oreo Chocolate shake  ₹ 80"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Oreo Chocolate shake  ₹ 80" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -297,7 +316,7 @@
                 <div class=" text-center">
                     <h6 class="">Butter scotch shake</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 80</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Butter scotch shake ₹ 80"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Butter scotch shake ₹ 80" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -307,7 +326,7 @@
                 <div class=" text-center">
                     <h6 class="">Pineapple shake</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Pineapple shake ₹ 70 "><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Pineapple shake ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -317,7 +336,7 @@
                 <div class=" text-center">
                     <h6 class="">Strawberry shake</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Strawberry shake ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Strawberry shake ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -327,7 +346,7 @@
                 <div class=" text-center">
                     <h6 class="">Banana shake</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Banana shake ₹ 60"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Banana shake ₹ 60" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
         </div>
@@ -351,7 +370,7 @@
                 <div class=" text-center">
                     <h6 class="">Plain dosa</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Plain dosa ₹ 60"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Plain dosa ₹ 60" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -361,7 +380,7 @@
                 <div class=" text-center">
                     <h6 class="">Masala Dosa</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Masala Dosa ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Masala Dosa ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -371,7 +390,7 @@
                 <div class=" text-center">
                     <h6 class="">Onion tomato dosa</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Onion tomato dosa ₹ 100"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Onion tomato dosa ₹ 100" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -381,7 +400,7 @@
                 <div class=" text-center">
                     <h6 class="">Shoukeens spl paneer dosa</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 100</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Shoukeens spl paneer dosa ₹ 100"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Shoukeens spl paneer dosa ₹ 100" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>      
 
@@ -392,7 +411,7 @@
                 <div class=" text-center">
                     <h6 class="">Idli sambhar</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 50</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Idli sambhar ₹ 50"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Idli sambhar ₹ 50" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>      
             <div class="column11" >
@@ -402,7 +421,7 @@
                 <div class=" text-center">
                     <h6 class="">Vada sambhar</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Vada sambhar ₹ 50"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Vada sambhar ₹ 50" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>      
             <div class="column11" >
@@ -412,7 +431,7 @@
                 <div class=" text-center">
                     <h6 class="">Dahi vada</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Dahi vada ₹ 60"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Dahi vada ₹ 60" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>      
             <div class="column11" >
@@ -422,7 +441,7 @@
                 <div class=" text-center">
                     <h6 class="">Uttapam</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Uttapam ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Uttapam ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>      
         </div>
@@ -439,7 +458,7 @@
                 <div class=" text-center">
                     <h6 class="">Tomato Soup</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 40</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text= Tomato Soup ₹ 40"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Tomato Soup ₹ 40" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>
             <div class="column11" >
@@ -449,7 +468,7 @@
                 <div class=" text-center">
                     <h6 class="">Manchow Soup</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 40</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Manchow Soup ₹ 40"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Manchow Soup ₹ 40" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>
             <div class="column11" >
@@ -459,7 +478,7 @@
                 <div class=" text-center">
                     <h6 class="">Hot & Sour Soup</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 40</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Hot & Sour Soup ₹ 40"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Hot & Sour Soup ₹ 40" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>
             <div class="column11" >
@@ -469,7 +488,7 @@
                 <div class=" text-center">
                     <h6 class="">Clear Veg Soup</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 40</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Clear Veg Soup ₹ 40"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Clear Veg Soup ₹ 40" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div>
         </div>
@@ -492,7 +511,7 @@
                 <div class=" text-center">
                     <h6 class="">Chowmein </h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Chowmein  ₹ 60"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Chowmein  ₹ 60" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -502,7 +521,7 @@
                 <div class=" text-center">
                     <h6 class="">veg hakka nooodles</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text= veg hakka nooodles ₹ 60"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value=" veg hakka nooodles ₹ 60" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -512,7 +531,7 @@
                 <div class=" text-center">
                     <h6 class="">schezwan noodles</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=schezwan noodles ₹ 60"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="schezwan noodles ₹ 60" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -522,7 +541,7 @@
                 <div class=" text-center">
                     <h6 class="">manchurian dry</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text= manchurian dry ₹ 70"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value=" manchurian dry ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -532,7 +551,7 @@
                 <div class=" text-center">
                     <h6 class="">manchurian gravy</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 70</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=manchurian gravy ₹ 70 "><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="manchurian gravy ₹ 70" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -542,7 +561,7 @@
                 <div class=" text-center">
                     <h6 class="">Red souce pasta</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 80</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Red souce pasta ₹ 80"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Red souce pasta ₹ 80" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -552,7 +571,7 @@
                 <div class=" text-center">
                     <h6 class="">White souce pasta</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 100</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=White souce pasta ₹ 100 "><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="White souce pasta ₹ 100 " style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
 
@@ -563,7 +582,7 @@
                 <div class=" text-center">
                     <h6 class="">Paneer 65</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 120</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=Paneer 65 ₹ 120"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="Paneer 65 ₹ 120" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -573,7 +592,7 @@
                 <div class=" text-center">
                     <h6 class="">chilli potato</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 60</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=chilli potato ₹ 60"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="chilli potato ₹ 60" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
             <div class="column11" >
@@ -583,7 +602,7 @@
                 <div class=" text-center">
                     <h6 class="">chilli Paneer</h6>
                     <p style="margin-bottom:0.2px;color: #ce3c83;">₹ 120</p>
-                    <a href="https://api.whatsapp.com/send?phone=917067604716&text=chilli Paneer ₹ 120"><button style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Order</button></a>
+                    <button value="chilli Paneer ₹ 120" style="background-color: #ce3c83;border:1px solid #ce3c83;width: 50%;color: yellow;">Add</button>
                 </div>
             </div> 
 
@@ -632,11 +651,45 @@
     </div>
 </div>
 </section>
-
+<div class="bottomFixButtionComponent" id="order_button"> 
+    <a style="font-size: 100%;border: 2px solid black; background-color: #ce3c83;color: black;padding-left: 1px;padding-right: 1px;border-radius: 10px; width: 30%;color: yellow;">Order </a> <div>|</div>
+    <p style="font-size: 100%;border: 2px solid black; background-color: #ce3c83;color: black;padding-left: 1px;padding-right: 1px;border-radius: 10px; width: 30%;color: yellow;">Total <span id="order_button_data"></span> </p>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$('#order_button').hide();
+
+$(document).ready(function(){
+    const data = [];
+    $("button").click(function(){
+    var button = $(this).val();
+    data.push(button);
+    if (data.length >0){
+        $('#order_button').show();
+        $("#order_button_remove").remove();
+        $("#order_button_data").append('<span id="order_button_remove">'+data.length+'</span>')
+        const counts = {};
+        const sampleArray = data;
+        sampleArray.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+        console.log(counts);
+        // $.each(counts, function(index, element) {
+        //     final_order_data.append( "Name : "+index+" And Quantity : "+element);
+        // });
+        const final_order_data = JSON.stringify(counts);
+        test_data = final_order_data.replace("{","");
+        final_data = test_data.replace("}","");
+        
+        $("a").attr("href", "https://api.whatsapp.com/send?phone=917067604716&text="+final_data+"")   
+
+    } 
+  });
+});
+</script>
 </body>
 </html>
